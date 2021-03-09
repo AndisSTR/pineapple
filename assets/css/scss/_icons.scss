@@ -1,0 +1,76 @@
+// Import Styles
+
+@use 'abstracts' as *;
+
+// -----------------
+
+.icons {
+    display: flex;
+    justify-content: center;
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        line-height: 46px;
+        text-align:center;
+        width: 46px;
+        height: 46px;
+        color: $icon_black;
+        border: 2px solid $grey;
+        border-radius: 50%;
+        margin-right:20px;
+        transition: 0.8s all;
+        @include tablet {
+            margin-right:10px;
+        }
+    }
+    a:nth-last-of-type(1) {
+        margin-right: 0px;
+        @include tablet {
+            margin-right:14px;
+        }
+    }
+    #facebook_icon:hover, #facebook_icon:active {
+        color:$white;
+        background: $fb_blue_h;
+        border: 2px solid $fb_blue_h;
+        box-shadow: 0px 20px 40px $shadow;
+        transition: all 300ms;
+    }
+    #instagram_icon:hover, #instagram_icon:active {
+        color:$white;
+        background: $inst_pink_h;
+        border: 2px solid $inst_pink_h;
+        box-shadow: 0px 20px 40px $shadow;
+        transition: all 300ms;
+    }
+    #twitter_icon:hover, #twitter_icon:active {
+        color:$white;
+        background: $twit_blue_h;
+        border: 2px solid $twit_blue_h;
+        box-shadow: 0px 20px 40px $shadow;
+        transition: all 300ms;
+    }
+    #youtube_icon:hover, #youtube_icon:active {
+        color:$white;
+        background: $yt_red_h;
+        border: 2px solid $yt_red_h;
+        box-shadow: 0px 20px 40px $shadow;
+        transition: all 300ms;
+    }
+    #facebook_icon:active {
+        background: $fb_blue_a;
+        border-color: $fb_blue_a;
+    }
+    #instagram_icon:active {
+        background: $inst_pink_a;
+        border-color: $inst_pink_a;
+    }
+    #twitter_icon:active {
+        background: $twit_blue_a;
+        border-color: $twit_blue_a
+    }
+    #youtube_icon:active {
+        background: $yt_red_a;
+        border-color: $yt_red_a;
+    }
+}
